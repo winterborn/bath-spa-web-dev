@@ -1,0 +1,58 @@
+/* Main */
+
+body {
+  text-align: center;
+  font-family: 'Merriweather', sans-serif;
+  background-color: #EFEFEF;
+  color: #112B3C;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #205375;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted 6px #F66B0E;
+  border-bottom: none;
+  width: 4%;
+}
+
+.phil-profile {
+  width: 15%;
+}
+
+
+/* Lists */
+
+ul {
+  display: inline;
+  padding: 2%;
+}
+
+li {
+  padding: .5%;
+}
+
+
+/* Contact */
+
+.contact {
+  padding: 2%;
+}
+
+a {
+  color: #112B3C;
+  font-family: 'Merriweather', sans-serif;
+  text-decoration: none;
+  margin: 10px 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
