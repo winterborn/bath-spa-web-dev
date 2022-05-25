@@ -1,0 +1,25 @@
+.fcontainer {
+    border: 2px solid darkgray;
+    height: 82vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;
+    flex-wrap: wrap; */
+
+}
+
+.fitem {
+    background-color: azure;
+    border: 2px solid black;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.item1 {
+    align-self: center;
+}
+
+.item5 {
+    flex-grow: 2;
+}
