@@ -159,9 +159,9 @@ h3:hover {
   
   a {
     text-decoration: none;
-    color: white;
+    color: white; 
   }
-  
+   
   .copyright {
     width: 100%;
     height: 50px;
