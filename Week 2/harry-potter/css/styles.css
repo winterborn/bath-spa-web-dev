@@ -21,6 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 
@@ -106,14 +107,12 @@ a:hover {
 
 p {
     font-family: sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
-
-
-
+/* testimonials */
 
 .testimonials {
     width: 100%;
@@ -122,8 +121,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -110px;
+    margin-top: -90px;
 }
+
+
+/* footer  */
 
 .footer {
     background-color: black;
