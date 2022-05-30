@@ -38,7 +38,7 @@ h2 {}
 .nav-bar {
     width: 100%;
     height: 40px;
-    background-color: black;
+    background-color: orange;
 }
 
 ul {
@@ -80,17 +80,32 @@ ul {
 .row-content {
     background-color: green;
     border: 2px solid black;
-    width: 400px;
-    height: 800px;   
+    width: 500px;
+    height: 1000px;   
+}
+
+.content-img {
+    width: 500px;
+    height: auto;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
 
 
+
+
 .testimonials {
-    background-color: yellow;
     width: 100%;
-    height: 500px;
+    height: 100px;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
