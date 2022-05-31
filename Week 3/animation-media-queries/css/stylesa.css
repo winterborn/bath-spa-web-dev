@@ -1,0 +1,36 @@
+body {
+    background-color: lightsalmon;
+    color: black;
+}
+
+.container {
+    border: 2px solid blue;
+    padding: auto;
+}
+
+.animatebox {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: auto;
+    width: 200px;
+    height: 300px;
+
+    animation-name: boxchange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+
+@keyframes boxchange {
+    from {
+        background-color: antiquewhite;
+        
+    }
+
+    to {
+        background-color: aquamarine;
+        width: 300px;
+    }
+}

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    background-image: url('../img/green-hill-zone.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 700px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Walk Cycle */
+
+.sonic {
+    position: relative;
+    bottom: 220px;
+    left: 50px;
+    background: url(../img/run-cycle-sprite-sheet.png) no-repeat -6px -1px;
+    width: 38px;
+    height: 38px;  
+    animation: walk_cycle .5s steps(5) infinite, move_forward 15s linear infinite;
+}
+
+@keyframes walk_cycle {
+    0% {
+        background-position: -6px -1px;
+    }
+
+    100% {
+        background-position: -210px -2px;
+    }
+}
+
+@keyframes move_forward {
+    0% {
+        transform: scale(3) translateX(-100px);
+    
+    }
+
+    100% {
+        transform: scale(3) translateX(1400px);
+        
+    }
+}
+
+
+/* Idle Animation */
+
+/* .sonic {
+    position: relative;
+    bottom: 260px;
+    left: 50px;
+    background: url(../img/walk-cycle-sprite-sheet.png) no-repeat -8px 0;
+    width: 32px;
+    height: 40px;
+    transform-origin: top left;
+    transform: scale(3);
+
+    animation: idle_cycle 1s steps(10);
+    animation-iteration-count: 5;
+    animation-delay: 5s;
+}
+
+@keyframes idle_cycle {
+    0% {
+        background-position: -8px 0;
+    }
+
+    100% {
+        background-position: -403px 0;
+    }
+} */
