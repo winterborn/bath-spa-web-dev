@@ -14,16 +14,57 @@ body {
 }
 
 
+/* Logo Splash */
+
+
+.splashscreen {
+    background: url(../img/title-2.png) no-repeat -218px -92px; 
+    width: 255px;
+	height: 144px;
+    position: relative;
+    bottom: 500px;
+}
+
+
+.sonic-profile {
+    background: url(../img/title-2.png) no-repeat -21px -8px;
+    width: 80px;
+	height: 74px;
+
+    animation: profile 1s steps(5);
+}
+
+@keyframes profile {
+    0% {
+        background-position: -21px -8px;
+    }
+
+    100% {
+        background-position: -462px -11px;
+    }
+}
+
+@keyframes profile {
+    0% {
+        background-position: -13px -89px;
+    }
+
+    100% {
+        background-position: -105px -89px;
+    }
+}
+
+
 /* Walk Cycle */
 
-.sonic {
+/* .sonic {
     position: relative;
     bottom: 220px;
     left: 50px;
     background: url(../img/run-cycle-sprite-sheet.png) no-repeat -6px -1px;
     width: 38px;
-    height: 38px;  
-    animation: walk_cycle .5s steps(5) infinite, move_forward 15s linear infinite;
+    height: 38px;
+    animation: walk_cycle .5s steps(5) infinite, move_forward 12s linear infinite;
 }
 
 @keyframes walk_cycle {
@@ -46,7 +87,7 @@ body {
         transform: scale(3) translateX(1400px);
         
     }
-}
+} */
 
 
 /* Idle Animation */
