@@ -8,7 +8,7 @@
 .flexbox-main-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
 }
 
 .navbar {
@@ -43,23 +43,25 @@
     align-items: center;
 }
 
-/* .footer {
-    background-color: black;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.footer {
     position: relative;
-    bottom: 850px;
-} */
+    top: 100px;
+}
 
 
 /* Main */
 
 body {
+    background-image: url('../img/gym-landscape.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+
     font-family: 'Montserrat', sans-serif;
     color: white;
     background-color: #EEEEEE;
-    /* background-image: url("..img/gym-landscape.jpg"); */
 }
 
 .nav-items-ul {
@@ -71,18 +73,6 @@ body {
 .nav-items-li {
     padding: 10px 50px 10px 10px;
 }
-
-/* .socials-ul {
-    list-style: none;
-    display: flex;
-    margin: 0px 0px 0px 0px;
-}
-
-.socials-li {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    padding: 10px 50px 10px 10px; */
 
 
 /* Images */
@@ -98,13 +88,15 @@ body {
     margin: 12px;
 }
 
-.hero-img {
+/* .hero-img {
+    background-image: url('../img/gym-landscape.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 90vh;
     margin: 0px 0px -100px 0px;
-}
-
-
+} */
 
 
 /* Text */
@@ -131,42 +123,35 @@ h3:hover {
 }
 
 
-
-
-
-
-  
-  ul {
+ul {
     list-style: none;
-  }
+}
 
-  .socials-ul {
+.socials-ul {
     background-color: black;
     width: 100%;
-    height: 80px;
+    height: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-  
-  .socials-img {
+    align-items: flex-start;
+}
+
+.socials-img {
     margin: 10px;
     width: 40px;
     height: auto;
-  }
-  
+}
 
-  
-  a {
+a {
     text-decoration: none;
-    color: white; 
-  }
-   
-  .copyright {
+    color: white;
+}
+
+.copyright {
     width: 100%;
     height: 50px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
