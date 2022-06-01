@@ -14,6 +14,10 @@ body {
 }
 
 
+.pixelart {
+    image-rendering: pixelated;
+}
+
 /* Logo Splash */
 
 .splashscreen {
