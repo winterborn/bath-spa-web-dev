@@ -8,7 +8,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-top: 700px;
+    margin-top: 600px;
     width: 100%;
     height: auto;
 }
@@ -16,35 +16,58 @@ body {
 
 /* Logo Splash */
 
-
 .splashscreen {
     background: url(../img/title-2.png) no-repeat -218px -92px; 
     width: 255px;
 	height: 144px;
     position: relative;
     bottom: 500px;
+    left: 630px;
+    z-index: 1;
+
+    transform: scale(2.5);
 }
 
 
 .sonic-profile {
     background: url(../img/title-2.png) no-repeat -21px -8px;
-    width: 80px;
-	height: 74px;
+    width: 91px;
+	height: 80px;
+    position: relative;
+    bottom: 480px;
+    left: 730px;
+    z-index: 2;
 
-    animation: profile 1s steps(5);
+    transform: scale(2.5);
+    animation: profile1 1s steps(5) forwards;
+    animation: profile2 1s backwards steps(2,jump-none) infinite;
+    
+    
 }
 
-@keyframes profile {
-    0% {
-        background-position: -21px -8px;
+@keyframes profile1 {
+    from {
+        background-position: 0px -8px;
     }
 
-    100% {
+    to {
         background-position: -462px -11px;
     }
+    
 }
 
-@keyframes profile {
+@keyframes profile2 {
+    from {
+        background-position: -13px -89px;
+    }
+
+    to {
+        background-position: -105px -89px;
+    }
+}
+
+
+/* @keyframes profile {
     0% {
         background-position: -13px -89px;
     }
@@ -52,14 +75,14 @@ body {
     100% {
         background-position: -105px -89px;
     }
-}
+} */
 
 
 /* Walk Cycle */
 
-/* .sonic {
+.sonic {
     position: relative;
-    bottom: 220px;
+    bottom: 20px;
     left: 50px;
     background: url(../img/run-cycle-sprite-sheet.png) no-repeat -6px -1px;
     width: 38px;
@@ -87,7 +110,7 @@ body {
         transform: scale(3) translateX(1400px);
         
     }
-} */
+}
 
 
 /* Idle Animation */
