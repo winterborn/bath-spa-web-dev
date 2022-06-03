@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 5px;
+    color: #fff;
+}
+
+
+/* Scene set-up */
+
+.scene {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 28, 64);
+    border-radius: 4px;
+    position: relative;
+    /* to prevent scroller */
+    overflow: hidden;
+}
+
+.scene img {
+    /* to position elements within frame */
+    position: absolute;
+}
+
+
+/* Scene elements */
+
+.city {
+    bottom: 0px;
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.plane {
+    top: 100px;
+    left: 100px;
+    width: 25%;
+    animation: plane-move 16s linear infinite forwards;
+}
+
+.boat {
+    width: 30%;
+    bottom: 0;
+    right: 30px;
+    animation: boat-move 14s linear forwards infinite;
+}
+
+.cloud {
+    animation: cloud-move 18s linear infinite forwards;
+}
+
+/* Cloud scale and position */
+
+.cloud1 {
+    width: 20%;
+    top: 0;
+    left: 20px;
+}
+
+.cloud2 {
+    width: 10%;
+    top: 0;
+    left: 50%;
+}
+
+.cloud3 {
+    width: 20%;
+    top: 0;
+    right: 0;
+}
+
+
+/* Animation keyframes */
+
+@keyframes plane-move {
+    to {
+        transform: translate(300px, -100px);
+    }
+}
+
+@keyframes boat-move {
+    to {
+        transform:
+            translateX(-300px);
+    }
+}
+
+@keyframes cloud-move {
+    to {
+        transform: translateX(25px);
+    }
+}
