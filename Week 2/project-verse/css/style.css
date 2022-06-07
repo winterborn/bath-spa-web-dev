@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* bg setup */
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* content styling */
+
+.content {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.content .logo {
+    width: 100px;
+    margin-top: 50px;
+}
+
+.content hr {
+    border: none;
+    height: 6px;
+    background: #cd7771;
+    max-width: 250px;
+}
+
+.content h1 {
+    font-size: 200px;
+    font-weight: 100;
+    color: #cfcfcfcf;
+    letter-spacing: 4px;
+    line-height: 150px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.content p {
+    max-width: 400px;
+    color: #cfcfcfcf;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.content .btn {
+
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 30px;
+    margin-top: 50px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+
+.content .btn:hover {
+
+    border-color: #cd7771;
+    background: #cd7771;
+    color: black;
+    font-weight: 2;
+}
+
+.menu {
+    width: 80px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* sidebar styling */
+
+.sidebar {
+    width: 50%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 110px;
+    max-width: 500px;
+    backdrop-filter: blur(8px);
+}
