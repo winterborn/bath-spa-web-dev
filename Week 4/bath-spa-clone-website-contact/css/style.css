@@ -31,7 +31,7 @@ body {
   max-width: 180rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 3fr 3fr 1fr;
+  grid-template-columns: 2fr 1fr 3fr;
   align-items: center;
   padding: 0 3.2rem;
 }
@@ -42,15 +42,15 @@ body {
   margin-bottom: 3.2rem;
 }
 
-.heading-primary {
+.heading-contact {
   font-size: 3.2rem;
   line-height: 1.05;
   margin-top: 4.8rem;
-  margin-bottom: 4.8rem;
+  margin-bottom: 2.8rem;
 }
 
-.hero-img {
-  width: 100%;
+.contact-img {
+  width: 90%;
 }
 
 .social-links {
@@ -75,4 +75,67 @@ body {
   color: #f67c92;
   border: solid;
   cursor: pointer;
+}
+
+
+
+
+/* contact button  */
+
+.btn-contact {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1.6rem 3.2rem;
+  color: black;
+  border: solid #f67c92; 
+  cursor: pointer;
+}
+
+/* form  */
+
+input {
+  color: black;
+  border: solid #f67c92;
+  width: 100%;
+  height: 4rem;
+  margin: -0.5rem;
+  padding: 1rem;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*  */
+
+hr {
+  height: .1rem;
+  background-color: #f67c92;
+  border: none;
+  margin: 50px;
+}
+
+
+
+/* footer  */
+
+.footer {
+  max-width: 180rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+}
+
+.footer-items ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  color: #f67c92;
+  font-size: 2rem;
 }
