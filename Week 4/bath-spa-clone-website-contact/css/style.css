@@ -24,6 +24,38 @@ body {
   padding: 0 4.8rem;
 }
 
+#sideNav{
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: #f67c92;
+  z-index: 2;
+  transition: .5s;
+}
+
+#menuBtn{
+  width: 50px;
+  position: fixed;
+  right: 65px;
+  top: 35px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+nav ul li{
+  list-style: none;
+  margin: 50px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
 
 /* contact section */
 
@@ -105,6 +137,13 @@ hr {
   margin: 2.8rem 3.2rem 2.2rem 3.2rem;
 }
 
+.divider {
+  height: .1rem;
+  visibility: hidden;
+  border: none;
+  margin: 2.8rem 3.2rem 2.2rem 3.2rem;
+}
+
 
 /* footer  */
 
@@ -165,6 +204,19 @@ li:hover {
 
 .copyright {
     text-align: left;
+}
+
+.copyright a, p{
+  text-decoration: none;
+  color: black;
+}
+
+.copyright a:hover {
+  color: #555;
+}
+
+.copyright p:hover {
+  color: #555;
 }
 
 .spa-logo {

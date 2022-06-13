@@ -21,9 +21,42 @@
     </a>
 
     <a href="#">
-      <img class="logo" alt="bath logo" src="images/menu.png" />
+      <img class="logo" alt="bath logo" id="menuBtn" src="images/menu.png" />
     </a>
+
+    <nav id="sideNav">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">FEATURES</a></li>
+        <li><a href="#">COURSES</a></li>
+        <li><a href="#">OFFER</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+      
+    <script>
+      let menuBtn = document.getElementById("menuBtn");
+      let SideNav = document.getElementById("sideNav");
+    
+      sideNav.style.right = "-250px";
+      menuBtn.onclick = function () {
+        if (sideNav.style.right = "-250px") {
+          sideNav.style.right = "0";
+        }
+        else {
+          sideNav.style.right = "-250px"
+        }
+      }
+    </script>
   </header>
+
+
+
+
+
+
+
 
   <section class="section-sign-up">
 
@@ -129,11 +162,9 @@
 
 
       <div class="copyright">
-        <p>
-          support@website.com <br>
-          Copyright 2022 | <br>
-          Web Development Bootcamp
-        </p>
+        <a href="mailto:support@website.com">support@website.com</a>
+        <p>Copyright 2022</p>
+        <a href="#">Web Development Bootcamp</a>
       </div>
 
       <div class="spa-logo">
@@ -143,6 +174,8 @@
     </div>
 
   </footer>
+
+  <hr class="divider">
 
 </body>
 
