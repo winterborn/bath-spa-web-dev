@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+    <!-- external script / external JS-->
+    <script src="/main.js"></script>
+</head>
+<body>
+    
+
+
+    <!-- internal script / embedded JS-->
+    <script>
+        console.log("internal JS hey");
+
+        let a; // declare a variable
+        let myClass = "Web Development"; // declare variable and give value
+        let myPet = "Labrador";
+
+        // ES6 New Javascript
+
+        // Global variables = can be written and accessed anywhere
+        // Local variables = only available to function scope
+
+        var myHouse; //global scope
+
+        function Car() {
+            let tyre = "black"; //function scope
+        }
+
+        function Vacuum() {
+            const Pi = 3.14; //function scope
+        }
+
+
+        // Strings Functions
+
+        let webDevs = "This is my evening web dev class";
+        console.log(webDevs);
+
+        // .indexOf
+        position = webDevs.lastIndexOf("evening");
+        console.log(position);
+
+        // .slice substring - slices out
+        let substr = webDevs.slice(1,9)
+        console.log(substr);
+        
+
+    </script>
+</body>
+</html>
