@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    body {
+        font-family: 'Inconsolata', sans-serif;
+        background: #2a364f;
+        display: grid;
+        place-items: center;
+    }
+
+    button {
+
+        display: inline-block;
+        background: #F8B627;
+        color: #F4F4F4;
+        font-size: 16px;
+        font-weight: normal;
+        width: 132px;
+        text-align: center;
+        border-radius: 3px;
+        transition: 400ms;
+        text-decoration: none;
+        padding: 10px 22px;
+        z-index: 100000;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    p {
+        text-align: center;
+        color: azure;
+        font-size: 50px;
+    }
+
+    h1 {
+        color: aquamarine;
+    }
+</style>
+
+<body>
+    <p class="para">
+        This is my first paragraph
+    </p><br>
+    <p class="para">
+        This is my first paragraph
+    </p>
+    <p>Dont forget to practice</p><br>
+    <h1 id="heading">Changed the content of the h1</h1>
+    <br>
+    <button onclick="changeContent()">Click Me</button>
+    <script>
+        const changeContent = () => {
+
+            //document.getElementById('heading').innerHTML ="Welcome to Web development Evening Bootcamp"
+            // const headingChange = document.getElementById('heading')
+            // headingChange.innerHTML = "Welcome to Web development Evening Bootcamp"
+
+            // console.log(document.getElementsByClassName('para'));
+            // console.log(document.getElementsByTagName('p'));
+            //document.querySelectorAll('.para').innerHTML="I changed again";
+            console.log(document.querySelectorAll('.para'));
+        }
+    </script>
+</body>
+
+</html>
