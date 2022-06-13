@@ -35,7 +35,6 @@
         color: azure;
         font-size: 50px;
     }
-
 </style>
 
 <body>
@@ -52,8 +51,35 @@
     </div>
 
     <script>
+        // DOM Model:
+        // The DOM is the Document Object Model, which deals with the document, the HTML elements themselves, e.g. document and all traversal you
+        // would do in it, events, etc. DOM stands for Document Object Model: it is how
+        // the browser stores your HTML and CSS.
+
+        // We can access this from JavaScript using the `document` global variable.
+        // Javascript can use this to:
+        // - read HTML
+        // - manipulate HTML
+        // For Ex: Change the background color to red document.body.style.background = "red";
 
 
+
+
+
+
+        // BOM Model:
+        // The BOM is the Browser Object Model, which deals with browser components aside from the document, like history, location, navigator and screen
+        // (as well as some others that vary by browser). OR In simple meaning, all the Window operations which come under BOM are performed using BOM.
+
+        // Let's see more practical on History object.
+        // Functions alert/confirm/prompt are also a part of BOM: they are directly not related to the document,
+        // but represent pure browser methods of communicating with the user.
+
+        // alert(location.href); // shows current URL
+        // if (confirm("Want to Visit FrontMentorChallenge?")) {
+        // location.href = "https://www.frontendmentor.io/"; // redirect the browser to another URL
+        // }
+        
     </script>
 </body>
 

@@ -64,19 +64,48 @@
     <p>Dont forget to practice</p><br>
     <h1 id="heading">Changed the content of the h1</h1>
     <br>
+
     <button onclick="changeContent()">Click Me</button>
+
     <script>
-        const changeContent = () => {
 
-            //document.getElementById('heading').innerHTML ="Welcome to Web development Evening Bootcamp"
-            // const headingChange = document.getElementById('heading')
-            // headingChange.innerHTML = "Welcome to Web development Evening Bootcamp"
+        // Change Content:
 
-            // console.log(document.getElementsByClassName('para'));
-            // console.log(document.getElementsByTagName('p'));
-            //document.querySelectorAll('.para').innerHTML="I changed again";
-            console.log(document.querySelectorAll('.para'));
-        }
+        //change content by search:
+        // const changeContent = () => {
+        //     document.getElementById('heading').innerHTML = "Welcome to Web Development Evening Bootcamp"
+        // }
+
+
+        //change content by reference:
+        // const headingChange = document.getElementById('heading')
+        // headingChange.innerHTML = "Welcome to Web Development Evening Bootcamp"
+
+
+
+        // Search Elements:
+
+        //search element by class property:
+        // console.log (document.getElementsByClassName('para'));
+        
+
+        //search element by tag name:
+        // console.log(document.getElementsByTagName('p'));
+
+
+
+        // Query Selectors:
+
+        // querySelector() returns the first matching value 
+        // whereas querySelectoral1()will return all the elements
+
+        //The query selector takes a CSS selector. Anything you can use in CSS to target HTML you can use in this function/method - don't forget to use `.` for classes and `#` for ids!
+        //Returns the FIRST (and only the first) item that matches the selector. This is called an Element.
+
+        // document.querySelector('#heading').innerHTML="I changed again";
+
+        console.log(document.querySelectorAll('.para'));
+        
     </script>
 </body>
 
