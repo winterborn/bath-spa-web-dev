@@ -5,108 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEARCH</title>
+    <title>Project Bulb</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<style>
-    @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
-
-    * {
-        margin: 0;
-        padding: 0;
-
-    }
-
-    body {
-        font-family: 'Inconsolata', sans-serif;
-        background: #2a364f;
-        display: grid;
-        place-items: center;
-    }
-
-    button {
-
-        display: inline-block;
-        background: #F8B627;
-        color: #F4F4F4;
-        font-size: 16px;
-        font-weight: normal;
-        width: 132px;
-        text-align: center;
-        border-radius: 3px;
-        transition: 400ms;
-        text-decoration: none;
-        padding: 10px 22px;
-        z-index: 100000;
-        outline: none;
-        border: none;
-        cursor: pointer;
-    }
-
-
-    p {
-        text-align: center;
-        color: azure;
-        font-size: 50px;
-    }
-
-    h1 {
-        color: aquamarine;
-    }
-</style>
 
 <body>
-    <p class="para">
-        This is my first paragraph
-    </p><br>
-    <p class="para">
-        This is my first paragraph
-    </p>
-    <p>Dont forget to practice</p><br>
-    <h1 id="heading">Changed the content of the h1</h1>
-    <br>
 
-    <button onclick="changeContent()">Click Me</button>
+    <div class="container-content">
+        <h1>Can you turn the light on?</h1>
+
+        <img src="/img/OFFbulb.jpeg" alt="OFFbulb.jpeg" id="bulb">
+    </div>
+
+    <div class="container-buttons">
+        <button class="button1" onclick="document.getElementById('bulb').src='/img/ONbulb.jpeg'">
+            <h2>Turn the light on</h2>
+        </button>
+
+        <button class="button2" onclick="document.getElementById('bulb').src='/img/OFFbulb.jpeg'">
+            <h2>Turn the light off</h2>
+        </button>
+
+      
+
+
+    </div>
+
 
     <script>
+        // JS script to click on bulb image to turn on and off
 
-        // Change Content:
+        // function bulbToggle() {
+        //     let bulb = document.getElementById('OFFbulb');
 
-        //change content by search:
-        // const changeContent = () => {
-        //     document.getElementById('heading').innerHTML = "Welcome to Web Development Evening Bootcamp"
+        //     if (bulb.src.match('OFFbulb')) {
+        //         bulb.src = '../img/ONbulb.jpeg';
+        //     } else {
+        //         bulb.src = '../img/OFFbulb.jpeg';
+        //     }
         // }
-
-
-        //change content by reference:
-        // const headingChange = document.getElementById('heading')
-        // headingChange.innerHTML = "Welcome to Web Development Evening Bootcamp"
-
-
-
-        // Search Elements:
-
-        //search element by class property:
-        // console.log (document.getElementsByClassName('para'));
-        
-
-        //search element by tag name:
-        // console.log(document.getElementsByTagName('p'));
-
-
-
-        // Query Selectors:
-
-        // querySelector() returns the first matching value 
-        // whereas querySelectoral1()will return all the elements
-
-        //The query selector takes a CSS selector. Anything you can use in CSS to target HTML you can use in this function/method - don't forget to use `.` for classes and `#` for ids!
-        //Returns the FIRST (and only the first) item that matches the selector. This is called an Element.
-
-        // document.querySelector('#heading').innerHTML="I changed again";
-
-        console.log(document.querySelectorAll('.para'));
-        
     </script>
+
 </body>
 
 </html>
