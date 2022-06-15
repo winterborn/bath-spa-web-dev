@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS InputEvents</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+
+    body {
+        font-family: 'Inconsolata', sans-serif;
+        background: #2a364f;
+    }
+
+    .main-div {
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 50px;
+    }
+
+    label {
+        color: white;
+    }
+
+    #result {
+        color: white;
+        height: 100px;
+        width: 100px;
+        margin: 20px;
+    }
+
+    #output {
+        color: white;
+    }
+
+
+</style>
+
+<body>
+
+    <div class="main-div">
+        <h1>This is Input event example</h1>
+
+        <div>
+            <label for="">Your Name</label>
+            <input type="text" name="" id="ice">
+            <br><br>
+            <label>Choose an ice cream flavour
+                <select id="iceCreams" name="iceCreams">
+                    <option value="">Select One…</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="sardine">Sardine</option>
+                    <option value="vanilla">Vanilla</option>
+                </select>
+            </label>
+            <br>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script>
+
+        // InputEvents in JavaScript - important, used in form validation
+        // The on - change event occurs when the value of an element has been changed.
+        // For radio buttons and checkboxes, the on - change event occurs when the the checked state has been changed.
+
+        const iceCreams = document.getElementById('iceCreams');
+        
+        iceCreams.addEventListener('change', () => {
+
+            const inputChange = document.getElementById('ice').value;
+            const iceCreams = document.getElementById('iceCreams').value;
+            const result = document.getElementById('output');
+            result.innerHTML = `Mr ${inputChange}, choose ${iceCreams} ice-cream flavour`;
+
+        });
+
+
+    </script>
+</body>
+
+</html>

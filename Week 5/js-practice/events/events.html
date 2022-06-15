@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HTML Events</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+
+    body {
+        font-family: 'Inconsolata', sans-serif;
+        background: #2a364f;
+    }
+
+    h1 {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .credit {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.4);
+
+    }
+
+    .content {
+        padding-top: 45px;
+        padding-bottom: 20px;
+    }
+
+    .button_container {
+        width: 176px;
+        margin: 0auto;
+        margin-top: 30px;
+        padding-top: 40px;
+    }
+
+    .button_su {
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        border-radius: 3px;
+        margin-bottom: 30px;
+        box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.6);
+    }
+
+    .button_su_inner {
+        display: inline-block;
+        background: #F8B627;
+        color: #F4F4F4;
+        font-size: 16px;
+        font-weight: normal;
+        width: 132px;
+        text-align: center;
+        border-radius: 3px;
+        transition: 400ms;
+        text-decoration: none;
+        padding: 22px;
+        z-index: 100000;
+    }
+</style>
+
+<body>
+
+    <!-- An HTML event can be something the browser does or something a user does.
+        Here are some examples of HTML events:
+            - An HTML web page has finished loading
+            - An HTML input field was changed
+            - An HTML button was clicked
+    
+    
+    Often, when events happen, you may want to do something.
+    JavaScript lets you execute code when events are detected.
+
+    HTML allows event handler attributes with JavaScript code to be added to HTML elements. -->
+
+
+    <!-- 4 ways of writing Events in JavaScript:
+        1: using inline events alert();
+        2: by Calling a function (We have already seen and most common way of writing) 
+        3: using Inline events (HTML onclick="" property and element.onclick)
+        4: using Event Listeners (addEventListener and IE's attachEvent) -->
+
+    <div class="content">
+        <h1>Different Events Types In JavaScript</h1>
+        <div class="button_container">
+
+            <!-- simple alert onclick -->
+            <div class="button_su">
+                <a href="#" class="button_su_inner" onclick="alert('I am awesome, but no one uses me')">
+                    <span class="button_text_container">
+                        simple Inline alert()
+                    </span>
+
+                    <!-- calling a function onclick -->
+            </div>
+            <div class="button_su">
+                <a href="#" class="button_su_inner" onclick="callingFunction()">
+                    <span class="button_text_container">
+                        By calling a function
+                    </span>
+                </a>
+
+                <!-- inline event - passing a reference, using DOM -->
+            </div>
+            <div class="button_su">
+                <a href="#" class="button_su_inner">
+                    <span class="button_text_container" id="thirdWay">
+                        Inline event
+                    </span>
+                </a>
+
+                <!-- event listeners -->
+            </div>
+            <div class="button_su">
+                <a href="#" class="button_su_inner" id="fourthWay">
+                    <span class="button_text_container">
+                        Event Listeners
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // calling a function
+
+        const callingFunction = () => {
+            alert('most common way of writing functions');
+        };
+
+
+        // calling events inline event, referring to an HTML ID - passing by reference
+
+        const thirdWay = document.getElementById('thirdWay');
+        thirdWay.onclick = function () {
+            alert('calling events by inline event, passing a reference');
+        }
+
+
+        // event listeners - uses querySelector to search for fourthWay ID to listen for 'click'
+        // must 
+
+        const fourthWay = document.querySelector('#fourthWay');
+        fourthWay.addEventListener('click', () => { // callback function as in passing function as argument
+            alert('calling events by event listeners');
+        });
+
+
+        // The MouseEvent Object:
+        // Events that occur when the mouse interacts with the HTML document belong to the MouseEvent Object.
+
+
+        // KeyboardEvent:
+        // When a user presses a key on the keyboard, events belong to the KeyboardEvent Object. 
+        // https://www.w3schools.com/jsref/obj_keyboardevent.asp
+
+    </script>
+
+
+</body>
+
+</html>
