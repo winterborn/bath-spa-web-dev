@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event Handler Challenge</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <div>
+        <form>
+            <!-- required, maxLength 20 -->
+            <input id="maxLength" class="required" type="text">
+            <label for="">required text - 20 character limit</label>
+
+            <!-- value between -10 to 10 -->
+            <input id="range" type="number">
+            <label for="">number between -10 and 10</label>
+
+            <!-- does not let you type the letter T -->
+            <input id="no-t" type="text">
+            <label for="">cannot use letter 't'</label>
+
+            <!-- required -->
+            <input class="required" type="checkbox">
+            <input id="checkbox2" type="checkbox">
+
+            <!-- required if checkbox 2 is required -->
+            <input type="text">
+            <input type="submit">
+        </form>
+    </div>
+
+
+
+
+
+    <script>
+        const maxLengthElement = document.querySelector("#maxLength")
+        maxLengthElement.addEventListener("keydown", (event) => {
+            if (maxLengthElement.value.length === 20) {
+                preventDefault()
+            }
+        })
+    </script>
+
+</body>
+
+</html>

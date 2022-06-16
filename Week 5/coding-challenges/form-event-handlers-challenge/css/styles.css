@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 85vh;
+    background-color: #51557E;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+
+div {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px white;
+    width: 300px;
+    height: auto;
+}
+
+input {
+    margin: 10px;
+}
