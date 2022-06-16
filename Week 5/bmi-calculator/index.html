@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+
+
+    <script>
+        // bmi calculator
+
+        let inputWeight = prompt("What is your weight in kg?");
+        let inputHeight = prompt("What is your height in m?")
+
+        let weight = parseInt(inputWeight);
+        let height = parseFloat(inputHeight);
+
+        function bmiCalc(weight, height) {
+
+            const formula = weight / (height * height);
+            return Math.round(formula);
+        }
+
+        bmiCalc(weight, height);
+
+
+        // math.pow // exponent - i.e. 2 to the power of 2
+        // math.round // rounded to the nearest integer
+        // parseFloat // parses full number including decimal values
+        // parseInt // parses just initial integer
+
+    </script>
+
+</body>
+
+</html>
