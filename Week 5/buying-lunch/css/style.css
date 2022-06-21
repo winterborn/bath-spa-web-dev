@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #51557E;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+/* content styling  */
+
+.box {
+  background-color: white;
+  border-radius: 20px;
+  width: 450px;
+  height: 450px;
+  text-align: center;
+  margin-top: 10%;
+  padding-top: 10%;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+
+/* list styling */
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 5px;
+}
+
+
+/* button styling */
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
