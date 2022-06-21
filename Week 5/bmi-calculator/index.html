@@ -6,35 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
+    <div class="container">
 
-    <script>
-        // bmi calculator
+        <div class="box">
 
-        let inputWeight = prompt("What is your weight in kg?");
-        let inputHeight = prompt("What is your height in m?")
-
-        let weight = parseInt(inputWeight);
-        let height = parseFloat(inputHeight);
-
-        function bmiCalc(weight, height) {
-
-            const formula = weight / (height * height);
-            return Math.round(formula);
-        }
-
-        bmiCalc(weight, height);
+            <h1>BMI Calculator:</h1>
+            <div class="content">
 
 
-        // math.pow // exponent - i.e. 2 to the power of 2
-        // math.round // rounded to the nearest integer
-        // parseFloat // parses full number including decimal values
-        // parseInt // parses just initial integer
+                <div class="input">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height">
+                </div>
+                <div class="input">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight">
+                </div>
 
-    </script>
+                <button id="calculate">Calculate BMI</button>
+
+            </div>
+
+            <div class="result">
+                <p>Your BMI is:</p>
+                <div id="result">0</div>
+
+                <p class="comment"> Comment: Your BMI is <span> </span></p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/js/main.js"></script>
 
 </body>
 

@@ -5,15 +5,44 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 85vh;
+  min-height: 1000vh;
   background-color: #51557E;
-  color: white;
-  font-family: sans-serif;
+  font-family: sans-serif
 }
 
 
 /* content styling  */
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.box {
+  background-color: white;
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  margin-top: 10%;
+  padding-top: 60px;
+  position: relative;
+}
+
+.input {
+  margin: 20px;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+#result {
+  margin-bottom: 10px;
+}
