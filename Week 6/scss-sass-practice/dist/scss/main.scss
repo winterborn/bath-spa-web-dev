@@ -1,0 +1,74 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Font Variables
+$poppins: '', serif;   
+$open-sans: 'Open Sans', sans-serif;
+
+
+
+
+
+// Colour Variables
+$colors:(
+primary: #F94C66,
+primary-light: lighten(#F94C66, 20%),
+primary-dark: darken(#F94C66, 40%),
+accent: #53BF9D
+);
+
+// Padding Variables Global
+
+$padding:15px;
+$borders:15px;
+
+
+@function maincolor($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+body {
+
+    font-family: 'Poppins';
+    margin: 0;
+
+    #bg {
+        clip-path: polygon(100% 0, 100% 59%, 37% 100%, 0 100%, 0 0);
+        background-color: maincolor(primary);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    header a {
+        color: #fff;
+        text-decoration: none;
+        padding: $padding;
+        display: block;
+        text-transform: uppercase;
+    }
+}
+
+main {
+    section#card {
+        background: #fff;
+        padding: 20px;
+        margin: 1em auto;
+        border-radius: $borders;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+        width: 80%;
+
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 10px;
+        }
+
+    }
+}
