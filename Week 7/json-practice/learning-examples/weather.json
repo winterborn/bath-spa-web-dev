@@ -1,3 +1,5 @@
+// https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=%7b%7d
+
 {
     "coord": {
         "lon": -0.1257,
@@ -40,3 +42,4 @@
     "name": "London",
     "cod": 200
 }
+

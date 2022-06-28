@@ -1,0 +1,180 @@
+[
+  {
+    "id": 1,
+    "first_name": "Joete",
+    "last_name": "De Blasi",
+    "email": "jdeblasi0@yandex.ru",
+    "pets": []
+  },
+  {
+    "id": 2,
+    "first_name": "Valle",
+    "last_name": "Pleace",
+    "email": "vpleace1@wikimedia.org",
+    "pets": [
+      "Mohandis",
+      "Dene",
+      "Zacharia"
+    ]
+  },
+  {
+    "id": 3,
+    "first_name": "Horace",
+    "last_name": "Durdy",
+    "email": "hdurdy2@nhs.uk",
+    "pets": []
+  },
+  {
+    "id": 4,
+    "first_name": "Leia",
+    "last_name": "Chislett",
+    "email": "lchislett3@tmall.com",
+    "pets": [
+    ]
+  },
+  {
+    "id": 5,
+    "first_name": "Cyrus",
+    "last_name": "Stillmann",
+    "email": "cstillmann4@yellowpages.com",
+    "pets": [
+    ]
+  },
+  {
+    "id": 6,
+    "first_name": "Pamella",
+    "last_name": "Astill",
+    "email": "pastill5@wp.com",
+    "pets": [
+    ]
+  },
+  {
+    "id": 7,
+    "first_name": "Karlen",
+    "last_name": "Lossman",
+    "email": "klossman6@earthlink.net",
+    "pets": [
+    ]
+  },
+  {
+    "id": 8,
+    "first_name": "Etheline",
+    "last_name": "Slimm",
+    "email": "eslimm7@mapy.cz",
+    "pets": [
+    ]
+  },
+  {
+    "id": 9,
+    "first_name": "Steven",
+    "last_name": "Ritchley",
+    "email": "sritchley8@com.com",
+    "pets": [
+    ]
+  },
+  {
+    "id": 10,
+    "first_name": "Thekla",
+    "last_name": "Bumpas",
+    "email": "tbumpas9@amazon.co.jp",
+    "pets": [
+    ]
+  },
+  {
+    "id": 11,
+    "first_name": "Wynne",
+    "last_name": "Piercy",
+    "email": "wpiercya@abc.net.au",
+    "pets": [
+    ]
+  },
+  {
+    "id": 12,
+    "first_name": "Baudoin",
+    "last_name": "Blaise",
+    "email": "bblaiseb@pen.io",
+    "pets": [
+    ]
+  },
+  {
+    "id": 13,
+    "first_name": "Dorella",
+    "last_name": "Speers",
+    "email": "dspeersc@ovh.net",
+    "pets": [
+    ]
+  },
+  {
+    "id": 14,
+    "first_name": "Lita",
+    "last_name": "Swadling",
+    "email": "lswadlingd@amazon.de",
+    "pets": [
+    ]
+  },
+  {
+    "id": 15,
+    "first_name": "Shamus",
+    "last_name": "O'Carran",
+    "email": "socarrane@typepad.com",
+    "pets": [
+      "Carroll"
+    ]
+  },
+  {
+    "id": 16,
+    "first_name": "Dukie",
+    "last_name": "Lofthouse",
+    "email": "dlofthousef@goo.gl",
+    "pets": [
+      "Karlotta",
+      "Shellysheldon"
+    ]
+  },
+  {
+    "id": 17,
+    "first_name": "Glenden",
+    "last_name": "Cavill",
+    "email": "gcavillg@msn.com",
+    "pets": [
+      "Hyacintha",
+      "Marga",
+      "Stefanie",
+      "Leshia",
+      "Saul"
+    ]
+  },
+  {
+    "id": 18,
+    "first_name": "Sauncho",
+    "last_name": "Hubane",
+    "email": "shubaneh@google.ru",
+    "pets": [
+      "Yolanda"
+    ]
+  },
+  {
+    "id": 19,
+    "first_name": "Abner",
+    "last_name": "Hawick",
+    "email": "ahawicki@nbcnews.com",
+    "pets": [
+      "Ruddie",
+      "Ronda",
+      "Florella",
+      "Braden"
+    ]
+  },
+  {
+    "id": 20,
+    "first_name": "Modestine",
+    "last_name": "Vurley",
+    "email": "mvurleyj@ft.com",
+    "pets": [
+      "Stillman",
+      "Christiano",
+      "Byrle",
+      "Hinze"
+    ]
+  }
+]

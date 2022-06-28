@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | fetch() Challenge</title>
+</head>
+<body>
+
+    <style>
+        div {
+            width: 1000px;
+            height: 1000px;
+            background-color: antiquewhite;
+        }
+    </style>
+
+    <div id="beautify">
+
+    </div>
+
+
+
+    <script>
+        // API for get requests
+        let fetchRes = fetch("exercise.json");
+        // fetchRes is the promise to resolve it by using.then() method
+        fetchRes.then(response =>
+            response.json()).then(data => {
+                console.log(data);
+                console.log(data[1].first_name);
+                document.getElementById("beautify").innerHTML = JSON.stringify(data);
+            })
+    </script>
+    
+    <pre id="beautify"></pre>
+
+</body>
+</html>
