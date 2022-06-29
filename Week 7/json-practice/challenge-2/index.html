@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript | fetch() Challenge</title>
 </head>
+
 <body>
 
     <style>
-        div {
-            width: 1000px;
-            height: 1000px;
-            background-color: antiquewhite;
+       .beautify {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: burlywood;
+            margin: 10px;
+            height: 400px;
+            width: 400px;
         }
     </style>
 
-    <div id="beautify">
 
+    <h1>JSON Fetching</h1>
+
+    <div class="beautify" id="beautify">
     </div>
 
+    <!-- button -->
+    <input type="button" value="Fetch User Data" id="myBtn">
 
 
-    <script>
-        // API for get requests
-        let fetchRes = fetch("exercise.json");
-        // fetchRes is the promise to resolve it by using.then() method
-        fetchRes.then(response =>
-            response.json()).then(data => {
-                console.log(data);
-                console.log(data[1].first_name);
-                document.getElementById("beautify").innerHTML = JSON.stringify(data);
-            })
-    </script>
     
-    <pre id="beautify"></pre>
+    <script>
+        const fetch_btn = document.getElementById('myBtn');
+        const data_result = document.getElementById('beautify');
+        fetch_btn.addEventListener('click', getData);
+
+        function getData() {
+
+            url = "exercise.json";
+            fetch(url).then((Response) => {
+                    console.log("Promise done");
+                    return Response.json();
+                })
+
+                .then((data) => {
+                    console.log("After getting data");
+                    console.log(data);
+
+                    data_result.innerHTML = (data[0].first_name)
+                    
+                });
+
+        }
+
+        console.log("Before fetching data");
+        getData();
+
+        // document.getElementById("beautify").innerHTML = JSON.stringify(data);
+    </script>
 
 </body>
+
 </html>
