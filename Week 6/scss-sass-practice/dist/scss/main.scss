@@ -3,12 +3,11 @@
 
 
 // Colors
-$colors: (
-    primary:#F94C66,
+$colors: (primary:#F94C66,
     primary-light:lighten(#F94C66, 20%),
     primary-dark:darken(#F94C66, 40%),
-    accent:#53BF9D
-);
+    accent:#53BF9D,
+    text: white);
 
 
 // Padding Variables Global
@@ -19,6 +18,17 @@ $borders: 15px;
 @function maincolor($color-name) {
     @return map-get($colors, $color-name)
 }
+
+// Mixin declaration
+
+$desktop: 840px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content
+    }
+}
+
 
 body {
 
@@ -32,6 +42,11 @@ body {
         height: 100%;
         position: absolute;
         z-index: -1;
+
+        // mixin
+        @include desktop {
+            clip-path: polygon(100% 0, 73% 100%, 0 99%, 0 0);
+        }
     }
 
     header a {
@@ -44,36 +59,54 @@ body {
     }
 }
 
-main section#card {
+main {
 
-    background: #fff;
-    padding: 20px;
-    margin: 1em auto;
-    border-radius: $borders;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
-    width: 80%;
+    @include desktop {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas:
+            "primary card";
+    }
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+    section#card {
 
-        li {
-            margin-bottom: 10px;
+        background: #fff;
+        padding: 20px;
+        margin: 1em auto;
+        border-radius: $borders;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+        width: 80%;
 
-            span {
-                position: absolute;
-                width: 30px;
-                height: 30px;
-                background-color: color(primary-light);
-                border-radius: 50%;
-                margin-right: 10px;
-            }
+        // mixin
+        @include desktop {
+            grid-area: card;
+            height: fit-content;
+            align-self: center;
+            margin: 1em;
+        }
 
-            strong {
-                display: inline-block;
-                margin-left: max(40px);
-                margin-top: 10px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+
+                span {
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    background-color: maincolor(primary-light);
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+
+                strong {
+                    display: inline-block;
+                    margin-left: max(40px);
+                    margin-top: 10px;
+                }
             }
         }
     }
@@ -83,6 +116,12 @@ section#primary {
     color: #fff;
     padding: $padding;
     text-align: center;
+
+     // mixin
+     @include desktop {
+        text-align: left;
+        padding-left: 100px;
+    }
 
     h1 {
         font-size: 3em;
@@ -95,16 +134,20 @@ section#primary {
     }
 
     a {
-        color: color(primary-dark);
+        color: maincolor(text);
         border-radius: $borders;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
-        background-color: color(accent);
+        background-color: maincolor(accent);
         display: block;
         text-align: center;
         margin: 50px auto 0 auto;
         padding: $padding;
 
+        // mixin
+        @include desktop {
+            display: inline-block;
+        }
     }
 }

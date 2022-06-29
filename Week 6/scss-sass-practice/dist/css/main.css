@@ -12,6 +12,12 @@ body #bg {
   position: absolute;
   z-index: -1;
 }
+@media (min-width: 840px) {
+  body #bg {
+    -webkit-clip-path: polygon(100% 0, 73% 100%, 0 99%, 0 0);
+            clip-path: polygon(100% 0, 73% 100%, 0 99%, 0 0);
+  }
+}
 body header a {
   color: #fff;
   text-decoration: none;
@@ -21,6 +27,13 @@ body header a {
   text-align: center;
 }
 
+@media (min-width: 840px) {
+  main {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "primary card";
+  }
+}
 main section#card {
   background: #fff;
   padding: 20px;
@@ -28,6 +41,16 @@ main section#card {
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 80%;
+}
+@media (min-width: 840px) {
+  main section#card {
+    grid-area: card;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-self: center;
+    margin: 1em;
+  }
 }
 main section#card ul {
   list-style-type: none;
@@ -41,7 +64,7 @@ main section#card ul li span {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: color(primary-light);
+  background-color: #fcafba;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -56,6 +79,12 @@ section#primary {
   padding: 15px;
   text-align: center;
 }
+@media (min-width: 840px) {
+  section#primary {
+    text-align: left;
+    padding-left: 100px;
+  }
+}
 section#primary h1 {
   font-size: 3em;
   margin-top: 10px;
@@ -65,14 +94,19 @@ section#primary p {
   font-size: 1.4em;
 }
 section#primary a {
-  color: color(primary-dark);
+  color: white;
   border-radius: 15px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: color(accent);
+  background-color: #53BF9D;
   display: block;
   text-align: center;
   margin: 50px auto 0 auto;
   padding: 15px;
+}
+@media (min-width: 840px) {
+  section#primary a {
+    display: inline-block;
+  }
 }/*# sourceMappingURL=main.css.map */
