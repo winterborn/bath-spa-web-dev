@@ -22,7 +22,7 @@ function getData() {
 
                 console.log(obj.name);
                 // sw_result.innerHTML += (obj.name + "<br>");
-                sw_result.innerHTML += (obj.name + " " + " | " + " " + obj.birth_year + "<br>");
+                sw_result.innerHTML += (obj.name + " " + " // " + " " + obj.birth_year + "<br>");
 
             }
         });
