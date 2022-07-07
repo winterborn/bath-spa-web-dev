@@ -10,7 +10,7 @@ const currentTempEl = document.getElementById('current-temp');
 
 
 const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 const API_KEY = '49cc8c821cd2aff9af04c9f98c36eb74';
 
@@ -25,7 +25,7 @@ setInterval(() => {
   const minutes = time.getMinutes();
   const ampm = hour >= 12 ? 'PM' : 'AM'
 
-  timeEl.innerHTML = (hour < 10 ? '0' + hour : hour) + ':' + (minutes < 10 ? '0' + minutes : minutes) + ' ' + `<span id="am-pm">${ampm}</span>`
+  timeEl.innerHTML = (hour < 10 ? '0' + hour : hour) + ':' + (minutes < 10 ? '0' + minutes : minutes) + ' '
 
   dateEl.innerHTML = days[day] + ', ' + date + ' ' + months[month]
 
@@ -83,7 +83,7 @@ function showWeatherData(data) {
     </div>
     <div class="weather-item">
         <div>Sunset</div>
-        <div>${window.moment(sunset*1000).format('HH:mm a')}</div>
+        <div>${window.moment(sunset * 1000).format('HH:mm a')}</div>
     </div>`;
 
   let otherDayForecast = ''
@@ -93,8 +93,8 @@ function showWeatherData(data) {
             <img src="http://openweathermap.org/img/wn//${day.weather[0].icon}@4x.png" alt="weather icon" class="w-icon">
             <div class="other">
                 <div class="day">${window.moment(day.dt*1000).format('dddd')}</div>
-                <div class="temp">Night - ${day.temp.night}&#176;C</div>
-                <div class="temp">Day - ${day.temp.day}&#176;C</div>
+                <div class="temp">Day: ${day.temp.day.toFixed(1)}&#176;C</div>
+                <div class="temp">Night: ${day.temp.night.toFixed(1)}&#176;C</div>
             </div>
             
             `
@@ -103,8 +103,8 @@ function showWeatherData(data) {
             <div class="weather-forecast-item">
                 <div class="day">${window.moment(day.dt*1000).format('ddd')}</div>
                 <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - ${day.temp.night}&#176;C</div>
-                <div class="temp">Day - ${day.temp.day}&#176;C</div>
+                <div class="temp">Day: ${day.temp.day.toFixed(1)}&#176;C</div>
+                <div class="temp">Night: ${day.temp.night.toFixed(1)}&#176;C</div>
             </div>`
     }
   })
