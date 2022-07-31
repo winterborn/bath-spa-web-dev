@@ -2,102 +2,283 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phil White | Portfolio</title>
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phil White | </title>
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/css/styles.css">
-
-
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 
 <body>
-
-  <!-- Page 1 -->
-
+  <!-- Home -->
 
   <header>
-    <nav>
+    <nav class="navbar navbar-expand-lg">
+      <a href="#" class="navbar-brand fw-bold">PHIL WHITE</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <img src="" alt="logo">
-
-      <ul>
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>PORTFOLIO</li>
-        <li>CONTACT</li>
-        <li>RESUME</li>
-      </ul>
-
+      <div class="navbar-collapse collapse" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active"><a href="#" class="nav-link">// HOME</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">// ABOUT</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">// PORTFOLIO</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">// CONTACT</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">// RESUME</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
+  <!-- Hero -->
 
-  <!-- <div class="flexbox-main-container">
-    <div class="navbar">
-        <div class="logo">
-            <img class="nav-img" src="img/gym-logo.png" alt="gym-logo">
-        </div>
+  <hr>
 
-        <div class="navigation-items">
-            <ul class="nav-items-ul">
-                <li class="nav-items-li"><h3>HOME</h3></li>
-                <li class="nav-items-li"><h3>ABOUT</h3></li>
-                <li class="nav-items-li"><h3>PERSONAL TRAINING</h3></li>
-                <li class="nav-items-li"><h3>CLASSES</h3></li>
-            </ul>
-        </div>
+  <section id="home">
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold">Hi, my name is</h1>
+      <h1 class="display-5 fw-bold">Phil.</h1>
+      <h1 class="display-5 fw-bold">I build things for the web</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          I'm an independent web-developer who enjoys creating things that live online.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <!-- <button type="button" class="btn btn-primary btn-lg px-4 gap-3"></button> -->
 
-        <div class="contact">
-            <img class="contact-img" src="img/user.png" alt="user-login">
-            <h3 class="login-text">LOG IN</h3>
-        </div>
-    </div> -->
-
-
-
-
-
-  <main>
-    <section>
-
-      <div class="container-fluid">
-        <div class="row">
-    
-          <div class="col-lg-6">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, omnis.</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, cumque reprehenderit. Itaque rem asperiores
-              veritatis assumenda ipsum vitae facere quod?</h2>
-          </div>
-    
-          <div class="col-lg-6">
-            <img src="https://picsum.photos/600/400" alt="hero-image">
-          </div>
-    
+          <a href="#about">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#0F1B61"
+              class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+            </svg>
+          </a>
         </div>
       </div>
+    </div>
+  </section>
 
-    </section>
-  </main>
+  <!-- About -->
+
+  <hr>
+
+  <section id="about">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="/img/profile-photo.jpeg" class="d-block mx-lg-auto img-fluid" alt="profile-photo" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">About Me:</h1>
+          <p class="lead">Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest
+            in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out
+            hacking together a custom reblog button taught me a lot about HTML & CSS!
+            Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge
+            corporation, and a student-led design studio. My main focus these days is building accessible, inclusive
+            products and digital experiences at Upstatement for a variety of clients.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+
+  <hr>
+
+  <section id="portfolio" class="py-5 text-center container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 mx-auto">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Some Things I've Built</h1>
+        <!-- <p class="lead text-muted">Something short and leading about the collection.</p> -->
+      </div>
+    </div>
+
+    <div class="container text-start">
+      <div class="card-columns">
+        <div class="card">
+          <a href="https://github.com/winterborn/tindog">
+            <img class="card-img-top" src="/img/test.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">TinDog.</h5>
+              <p class="card-text">
+                Project to create responsive website using HTML, Bootstrap frameworks and CSS.
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="bi bi-eye"></i>1000<i
+                    class="bi bi-user"></i>admin<i class="bi bi-calendar"></i>Jan 20, 2018</small></p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1472076638602-b1f8b1ac0b4a?ixlib=rb-0.3.5&s=63c9de7246b535be56c8eaff9b87dd89&auto=format&fit=crop&w=500&q=80"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Magic 8-Ball.
+              </h5>
+              <p class="card-text">
+                Project to practise user input retrieval and display using JavaScript, whilst creating a simple, responsive website utilising HTML, Bootstrap frameworks and CSS.
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="bi bi-eye"></i>1000<i
+                class="bi bi-user"></i>admin<i class="bi bi-calendar"></i>Jan 20, 2018</small></p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://github.com/winterborn/magic-ball">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1472076638602-b1f8b1ac0b4a?ixlib=rb-0.3.5&s=63c9de7246b535be56c8eaff9b87dd89&auto=format&fit=crop&w=500&q=80"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Magic 8-Ball.
+              </h5>
+              <p class="card-text">
+                Project to practise user input retrieval and display using JavaScript, whilst creating a simple, responsive website utilising HTML, Bootstrap frameworks and CSS.
+              </p>
+              <p class="card-text"><small class="text-muted"><i class="bi bi-eye"></i>1000<i
+                class="bi bi-user"></i>admin<i class="bi bi-calendar"></i>Jan 20, 2018</small></p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1535074153497-b08c5aa9c236?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2aaf944a59f16fe1fe72f5057b3a7dd&auto=format&fit=crop&w=500&q=80"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur.</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i
+                    class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1535124406821-d2848dfbb25c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=98c434d75b44c9c23fc9df2a9a77d59f&auto=format&fit=crop&w=500&q=80"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, consequatur culpa
+                cumque deserunt dignissimos error explicabo fugiat harum ipsam magni minus mollitia nemo perferendis qui
+                repellendus rerum saepe vel voluptate voluptatem voluptatum!
+                Aperiam, labore, molestiae!..</p>
+              <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i
+                    class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1508015926936-4eddcc6d4866?ixlib=rb-0.3.5&s=10b3a8717ab609be8d7786cab50c4e0b&auto=format&fit=crop&w=500&q=80"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi debitis eaque
+                explicabo fuga maiores necessitatibus, neque omnis optio vel!</p>
+              <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i
+                    class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+
+  <hr>
+
+  <section id="contact" class="py-5 text-center container">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Get In Touch</h1>
+        <p class="lead text-muted">Although I’m not currently looking for any new opportunities, my inbox is always
+          open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+        <!-- <p><a href="mailto:email@example.com" class="btn btn-primary my-2">Say Hello!</a></p> -->
+
+        <div class="contact-form-wrapper d-flex justify-content-center">
+          <form action="https://formspree.io/f/xbjbrgnb" method="POST" class="contact-form">
+            <div>
+              <input type="text" class="form-control rounded border-white mb-3 form-input" name="_name" id="full-name"
+                placeholder="Name" required="">
+            </div>
+            <div>
+              <input type="email" class="form-control rounded border-white mb-3 form-input" name="_replyto"
+                id="email-address" placeholder="Email" required="">
+            </div>
+            <div>
+              <textarea class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" name="_message"
+                id="email-subject" placeholder="Message" required=""></textarea>
+            </div>
+            <div class="submit-button-wrapper">
+              <input type="submit" value="Send">
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
 
-  <!-- Page 2 -->
+  <!-- Resume -->
 
+  <!-- Footer -->
 
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">Designed & Built by Phil White</span>
+      </div>
 
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="https://github.com/winterborn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0F1B61" class="bi bi-github"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+          </a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/phil_white89/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0F1B61" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg>
+          </a></li>
+      </ul>
+    </footer>
+  </div>
 
+  <!-- Scripts -->
 
   <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
   </script>
+
 </body>
 
 </html>
